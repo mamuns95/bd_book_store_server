@@ -10,7 +10,7 @@ const categories = require("./data/categories.json");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Bootcamp The Breaaking News Server is Running");
+  res.send("Server is Running");
 });
 
 app.get("/categories", (req, res) => {
@@ -41,5 +41,5 @@ app.get("/news/:id", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Bootcamp The Breaaking News Server is Running on ${port}`);
+  console.log(`Server is Running on ${port}`);
 });
